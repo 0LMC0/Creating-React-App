@@ -5,7 +5,7 @@ export const products = [
         description: 'Nike airforce ones zapatillas blancas con mucho estilo',
         price: 15000,
         stock: 4,
-        img: './assets/img/airforce1.png',
+        img: 'assets/img/airforce1.png',
     },
     {
         id: '2',
@@ -13,7 +13,7 @@ export const products = [
         description: 'Nike AirMax 720 blancas',
         price: 27000,
         stock: 2,
-        img: "./assets/img/720.jpg",
+        img: "assets/img/720.jpg",
     },
     {
         id: '3',
@@ -21,7 +21,7 @@ export const products = [
         description: 'Adidas Forum Low blancas con azules',
         price: 12000,
         stock: 7,
-        img: './assets/img/forum-low.png',
+        img: '/assets/img/forum-low.png',
     },
     {
         id: '4',
@@ -29,7 +29,7 @@ export const products = [
         description: 'Adidas Lego Sport amarillas',
         price: 24000,
         stock: 10,
-        img: './assets/img/airforce1.png',
+        img: '/assets/img/airforce1.png',
     },
     {
         id: '5',
@@ -37,7 +37,7 @@ export const products = [
         description: 'Adidas Stan Smith Verdes Con Blancas',
         price: 13000,
         stock: 4,
-        img: './assets',
+        img: './assets/img/stan-smith.jpg',
     },
     {
         id: '6',
@@ -45,7 +45,7 @@ export const products = [
         description: 'Adidas SuperStar Originales',
         price: 10000,
         stock: 15,
-        img: './img/superstar.jpg',
+        img: './assets/img/superstar.jpg',
     },
 ]
 

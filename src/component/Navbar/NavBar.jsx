@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav , Navbar, Container } from 'react-bootstrap'
@@ -9,19 +10,21 @@ const NavBar = () => {
     return (
             <Navbar bg="clear" variant="dark">
              <Container>
-                     <Navbar.Brand href="#home">
+                     <Link to="/">
                        <img
                         src= { logo }
                         width="150"
                         className="d-inline-block align-top"
                         alt="Footshop"
                        />
-                     </Navbar.Brand>
+                     </Link>
                      <Navbar.Collapse className="justify-content-end">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#catalogo">Catalogo</Nav.Link>
                         <Nav.Link href="#contact">Contacto</Nav.Link>
-                         <CartWidget />
+                        <Link to='/cart'> 
+                          <CartWidget  />
+                        </Link>
                     </Navbar.Collapse>
             </Container>
             </Navbar>

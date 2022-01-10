@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const CartWidget = () => {
     return (
         <div className='p-3'>
-           <a href="#" className='text-dark' ><GiShoppingCart />  4</a> 
+           <a href="/cart" className='text-dark' ><GiShoppingCart />  4</a> 
         </div>
     )
 }

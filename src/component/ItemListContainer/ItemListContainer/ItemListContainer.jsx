@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import { traerProductos } from './products'
-import ItemList from './itemlist/ItemList'
+import { traerProductos } from '../products/products'
+import ItemList from '../itemlist/ItemList'
 
 
 const ItemListContainer = (greetings) => {
@@ -22,7 +22,7 @@ const ItemListContainer = (greetings) => {
 
         <div>
             <h2 className='text-center'>{ greetings.titulo }</h2>
-            <ItemList productos={ListaProductos} />
+            {<ItemList productos={ListaProductos} />}
         </div>
     )
 }
