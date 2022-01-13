@@ -33,3 +33,5 @@ const [counter, setCounter] = useState(minStock)
 }
 
 export default ItemCount
+
+//exporta a ItemListcontainer

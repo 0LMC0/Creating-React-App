@@ -3,7 +3,7 @@ import Item from '../item/Item.jsx'
 
 const ItemList = ({ productos }) => {
     return (
-      <div className="grilla">
+      <div className="">
           
         {productos.map((producto) => {
           return <Item key={producto.id} product={producto}></Item>;
@@ -12,3 +12,5 @@ const ItemList = ({ productos }) => {
     );
   };
   export default ItemList;
+
+  //exporta a ItemListContainer

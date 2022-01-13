@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { traerProductos } from '../products/products'
 import ItemList from '../itemlist/ItemList'
+import { Container } from 'react-bootstrap'
+
 
 
 const ItemListContainer = (greetings) => {
@@ -22,7 +24,10 @@ const ItemListContainer = (greetings) => {
 
         <div>
             <h2 className='text-center'>{ greetings.titulo }</h2>
-            {<ItemList productos={ListaProductos} />}
+            <Container>
+            {<ItemList productos={ListaProductos    } />}
+            </Container>
+            
         </div>
     )
 }

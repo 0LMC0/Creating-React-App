@@ -19,9 +19,8 @@ const NavBar = () => {
                        />
                      </Link>
                      <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#catalogo">Catalogo</Nav.Link>
-                        <Nav.Link href="#contact">Contacto</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/">Catalogo</Nav.Link>
                         <Link to='/cart'> 
                           <CartWidget  />
                         </Link>

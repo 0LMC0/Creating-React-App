@@ -5,7 +5,9 @@ export const products = [
         description: 'Nike airforce ones zapatillas blancas con mucho estilo',
         price: 15000,
         stock: 4,
-        img: 'assets/img/airforce1.png',
+        marca: 'Nike',
+        modelo: 'AirMax One',
+        img: './assets/img/airforce1.png',
     },
     {
         id: '2',
@@ -13,7 +15,9 @@ export const products = [
         description: 'Nike AirMax 720 blancas',
         price: 27000,
         stock: 2,
-        img: "assets/img/720.jpg",
+        marca: 'Nike',
+        modelo: 'AirMax 720 ghost',
+        img: "./assets/img/720.jpg",
     },
     {
         id: '3',
@@ -21,7 +25,9 @@ export const products = [
         description: 'Adidas Forum Low blancas con azules',
         price: 12000,
         stock: 7,
-        img: '/assets/img/forum-low.png',
+        marca: 'Adidas',
+        modelo: 'Forum Low',
+        img: '/./assets/img/forum-low.jpg',
     },
     {
         id: '4',
@@ -29,7 +35,9 @@ export const products = [
         description: 'Adidas Lego Sport amarillas',
         price: 24000,
         stock: 10,
-        img: '/assets/img/airforce1.png',
+        marca: 'Adidas',
+        modelo: 'Lego Sport',
+        img: '/./assets/img/lego-sport.jpg',
     },
     {
         id: '5',
@@ -37,7 +45,9 @@ export const products = [
         description: 'Adidas Stan Smith Verdes Con Blancas',
         price: 13000,
         stock: 4,
-        img: './assets/img/stan-smith.jpg',
+        marca: 'Adidas',
+        modelo: 'Stan Smith',
+        img: '././assets/img/stan-smith.jpg',
     },
     {
         id: '6',
@@ -45,12 +55,22 @@ export const products = [
         description: 'Adidas SuperStar Originales',
         price: 10000,
         stock: 15,
-        img: './assets/img/superstar.jpg',
+        marca: 'Adidas',
+        modelo: 'Superstar',
+        img: '././assets/img/superstar.jpg',
     },
 ]
 
 export const traerProductos = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(products) 
-    }, 2000);
+    let condicion = true
+    if(condicion){
+        setTimeout(() => {
+            resolve(products) 
+        }, 2000);
+    }
+    else {
+        reject ('error')
+    }
 })
+
+//exporta a ItemListContainer y a app.js
