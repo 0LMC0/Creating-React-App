@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
        const Producto = traerProductos.then(resp => (resp.find(products.id=== {id})))
-       setProducto(Producto)
+       setProducto(Producto.current)
     },[])
     
 
@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
 
         <div>
             <h2 className='text-center'>{ Producto.name }</h2>
-    	        {<ItemDetail producto={Producto} />}     
+    	        {<ItemDetail product={Producto} />}     
         </div>
     )
 }
