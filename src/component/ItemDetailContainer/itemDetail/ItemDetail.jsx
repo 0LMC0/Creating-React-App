@@ -1,20 +1,20 @@
 import React from 'react'
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Card, ListGroup, ListGroupItem  } from 'react-bootstrap';
 
-const ItemDetail = ({Producto}) => {
+const ItemDetail = ({product}) => {
     return (
         <div>
             <Card style={{ width: '100%' }}>
-              <Card.Img variant="left" src={Producto.img} />
+              <Card.Img variant="left" src={product.img} />
             <Card.Body>
                 <Card.Title></Card.Title>
                     <Card.Text>
-                    {Producto.description}
+                    {product.description}
                     </Card.Text>        
                 </Card.Body>
                 <ListGroup className="list-group-flush">  
-                    <ListGroupItem>Marca || {Producto.marca}</ListGroupItem>
-                    <ListGroupItem>Modelo || {Producto.modelo}</ListGroupItem>
+                    <ListGroupItem>Marca || {product.marca}</ListGroupItem>
+                    <ListGroupItem>Modelo || {product.modelo}</ListGroupItem>
                 </ListGroup>
                 <Card.Body>   
                     

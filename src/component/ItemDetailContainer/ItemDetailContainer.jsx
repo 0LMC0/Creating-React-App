@@ -12,7 +12,6 @@ const ItemDetailContainer = () => {
        const Producto = traerProductos.then(resp => (resp.find(products.id=== {id})))
        setProducto(Producto)
     },[])
-
     
 
     return (

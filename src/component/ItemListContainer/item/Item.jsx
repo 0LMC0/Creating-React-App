@@ -16,7 +16,7 @@ const Item = ({ product }) => {
              <Card.Text>
                   Stock Disponible= Ultimas {product.stock} Unidades!
              </Card.Text>
-             <Link to='/ItemDetailContainer:id'>
+             <Link to='/Item/:id'>
                 <Button variant="primary" className='w-100'>Ver detalle</Button>
              </Link>
            </Card.Body>
