@@ -4,14 +4,13 @@ import { products, traerProductos } from '../ItemListContainer/products/products
 import ItemDetail from './itemDetail/ItemDetail';
 
 const ItemDetailContainer = () => {
-
     const [Producto, setProducto] = useState({})
-    const {id}=useParams
+    const {id}=useParams()
 
     useEffect(() => {
-       const Producto = traerProductos.then(resp => (resp.find(products.id === {id})))
-       setProducto(Producto.current)
-    },[])
+        traerProductos
+            .then(answer => setProducto(answer.find(product => product.id === parseInt(id))))
+    }, [id])
     
 
     return (
