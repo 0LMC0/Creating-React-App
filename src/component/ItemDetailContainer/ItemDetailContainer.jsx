@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
     const {id}=useParams
 
     useEffect(() => {
-       const Producto = traerProductos.then(resp => (resp.find(products.id=== {id})))
+       const Producto = traerProductos.then(resp => (resp.find(products.id === {id})))
        setProducto(Producto.current)
     },[])
     
@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
     return (
 
         <div>
-            <h2 className='text-center'>{ Producto.name }</h2>
+            <h2 className='text-center'>{ products.name }</h2>
     	        {<ItemDetail product={Producto} />}     
         </div>
     )
