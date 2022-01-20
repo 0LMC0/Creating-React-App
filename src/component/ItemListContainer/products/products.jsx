@@ -7,6 +7,7 @@ export const products = [
         stock: 4,
         marca: 'Nike',
         modelo: 'AirForce One',
+        category:'mas_vendidas',
         img: '/./assets/img/airforce1.png',
     },
     {
@@ -17,6 +18,7 @@ export const products = [
         stock: 2,
         marca: 'Nike',
         modelo: 'AirMax 720 ghost',
+        category:'mas_vendidas',
         img: "/./assets/img/720.jpg",
     },
     {
@@ -27,6 +29,7 @@ export const products = [
         stock: 7,
         marca: 'Adidas',
         modelo: 'Forum Low',
+        category:'nuevos_modelos',
         img: '/./assets/img/forum-low.jpg',
     },
     {
@@ -37,6 +40,7 @@ export const products = [
         stock: 10,
         marca: 'Adidas',
         modelo: 'Lego Sport',
+        category:'nuevos_modelos',
         img: '/./assets/img/lego-sport.jpg',
     },
     {
@@ -47,6 +51,7 @@ export const products = [
         stock: 4,
         marca: 'Adidas',
         modelo: 'Stan Smith',
+        category:'mas_vendidas',
         img: '/./assets/img/stan-smith.jpg',
     },
     {
@@ -57,6 +62,7 @@ export const products = [
         stock: 15,
         marca: 'Adidas',
         modelo: 'Superstar',
+        category:'clasicas',
         img: '/./assets/img/superstar.jpg',
     },
 ]

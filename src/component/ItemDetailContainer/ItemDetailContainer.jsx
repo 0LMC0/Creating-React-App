@@ -7,11 +7,12 @@ const ItemDetailContainer = () => {
     const [Producto, setProducto] = useState({})
     const {id}=useParams()
 
-    useEffect(() => {
+    useEffect((IdCategory) => {
         traerProductos
-            .then(answer => setProducto(answer.find(product => product.id === parseInt(id))))
+            .then(answer => setProducto(answer.filter(product => product.category ===IdCategory)))
     }, [id])
     
+
 
     return (
 
