@@ -3,6 +3,17 @@ import { traerProductos } from '../products/products'
 import ItemList from '../itemlist/ItemList'
 import { Container } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
+import PacmanLoader from "react-spinners/PacmanLoader";
+import { css } from "@emotion/react";
+
+const override = css`
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left:500px;
+margin-top:250px;
+margin: 2;
+`;
 
 
 const ItemListContainer = (greetings) => {
@@ -10,6 +21,7 @@ const ItemListContainer = (greetings) => {
     //ListaProductos como valor y setListaProductos lo cambia
     const [ListaProductos, setListaProductos] = useState([]);
     const[Loading, setLoading] = useState(true);
+    let color = ("#0D6EFD");
     const {categoriaId}=useParams();
 
 
@@ -33,7 +45,7 @@ const ItemListContainer = (greetings) => {
         <div>
             <h2 className='text-center'>{ greetings.titulo }</h2>
             <Container>
-            {Loading ? <h2>Cargando</h2> : <ItemList productos={ListaProductos    } />}
+            {Loading ? <PacmanLoader color={color} loading={Loading} css={override} size={70} /> : <ItemList productos={ListaProductos    } />}
             </Container>
             
         </div>

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 const Item = ({ product }) => {
     return (
       <>
+            <div className='px-2 pb-5'>
             <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src={product.img} />
                <Card.Body>
@@ -21,6 +22,7 @@ const Item = ({ product }) => {
              </Link>
            </Card.Body>
           </Card>
+            </div>
       </>
     );
   };

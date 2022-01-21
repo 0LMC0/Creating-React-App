@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav , Navbar, Container, NavDropdown } from 'react-bootstrap'
+import {  Navbar, Container, NavDropdown } from 'react-bootstrap'
 import logo from './assets/img/footshop.png'
 import CartWidget from './cartWidget';
 
@@ -20,7 +20,9 @@ const NavBar = () => {
                        />
                      </Link>
                      <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link href="/">Home</Nav.Link>
+                     <Link  to='/'>
+                              Home
+                          </Link>
                         <NavDropdown title="Categorias" id="nav-dropdown">
                           <Link  to='/category/nuevos_modelos'>
                               <li className='text-center'>Nuevos Modelos</li>

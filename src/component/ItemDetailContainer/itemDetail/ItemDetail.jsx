@@ -5,11 +5,7 @@ const ItemDetail = ({product}) => {
     return (
         <div>
             <Container>
-                <div className="class"></div>
-                
-                    
-                   
-                        <Row>
+                     <Row>
                             <Col xs={5}>
                                <Image style={{ width: '100%' }} src={product.img}/>
                             </Col>
