@@ -1,7 +1,17 @@
 import React from 'react'
-import { Card, ListGroup, ListGroupItem, Container, Image, Row, Col, Button  } from 'react-bootstrap';
+import { useState } from 'react';
+import { Card, ListGroup, ListGroupItem, Container, Image, Row, Col  } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import  ItemCount  from '../../ItemListContainer/ItemCount/ItemCount';
 
 const ItemDetail = ({product}) => {
+
+    const [ show, setShow ] = useState(true)
+    
+    const onAdd = (counter) => {
+        setShow(false)
+    }
+
     return (
         <div>
             <Container>
@@ -15,7 +25,7 @@ const ItemDetail = ({product}) => {
                             <Card.Text className="blockquote-footer p3">
                             Producto Nuevo || La mejor calidad
                             </Card.Text>
-                                <Card.Title className='display-1 mb-5 mt-5'>{product.name}</Card.Title>
+                                <Card.Title className='display-3 mb-5 mt-5'>{product.name}</Card.Title>
                                 <Card.Text className='p mb-5 mt-5'>
                                     {product.description}
                                 </Card.Text>   
@@ -25,11 +35,12 @@ const ItemDetail = ({product}) => {
                                 <Card.Text className='display-5 mb-5'>
                                     ${product.price}
                                 </Card.Text>
-                                  <Button variant="primary" size="lg" style={{ width: '40%' }} >Comprar</Button>{' '} 
-                                  <Button variant="secondary" size="lg" style={{ width: '40%' }} >Agregar al carrito</Button>{' '} 
+                                    <p>Quedan disponibles = {product.stock}  unidades</p>
+                                {/* esto muestra el contador y si no con un if un boton de link al carrito cuando ya se eligio */}
+                                    { show ?  <ItemCount  stock={product.stock} onAdd={onAdd} /> : <Link to='/cart'><button className='btn btn-primary'>Terminar la compra</button></Link> }
                                 </Card.Body>
                                 <ListGroup className="list-group-flush">  
-                                    <ListGroupItem>Marca || {product.marca}</ListGroupItem>
+                                    <ListGroupItem>Marca    || {product.marca}</ListGroupItem>
                                     <ListGroupItem>Modelo || {product.modelo}</ListGroupItem>
                                 </ListGroup>
                             <Card.Body>                         

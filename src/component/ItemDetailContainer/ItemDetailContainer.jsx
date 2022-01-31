@@ -9,16 +9,14 @@ const ItemDetailContainer = () => {
     const {id}=useParams()
 
     useEffect(() => {
-        traerProductos
-            .then(answer => setProducto(answer.find(product => product.id === parseInt(id))))
+        traerProductos.then(answer => setProducto(answer.find(product => product.id === parseInt(id))))
     }, [id])
-    
 
 
     return (
-
+        
         <div>
-            <h2 className='text-center'>{ Producto.name }</h2>
+            <h2 className='text-center display-1 mb-5'>{ Producto.marca }</h2>
     	        {<ItemDetail product={Producto} />}     
         </div>
     )

@@ -12,9 +12,7 @@ justify-content: center;
 align-items: center;
 margin-left:500px;
 margin-top:250px;
-margin: 2;
 `;
-
 
 const ItemListContainer = (greetings) => {
 
@@ -53,3 +51,4 @@ const ItemListContainer = (greetings) => {
 }
 
 export default ItemListContainer
+
