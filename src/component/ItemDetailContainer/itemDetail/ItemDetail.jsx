@@ -44,7 +44,7 @@ const ItemDetail = ({product}) => {
                                 </Card.Text>
                                     <p>Quedan disponibles = {product.stock}  unidades</p>
                                 {/* esto muestra el contador y si no con un if un boton de link al carrito cuando ya se eligio */}
-                                    { show ?  <ItemCount  stock={product.stock} onAdd={onAdd} /> : <Link to='/cart'><button className='btn btn-primary w-100'>Terminar la compra</button></Link> }
+                                    { show ?  <ItemCount  stock={product.stock} onAdd={onAdd} /> : <><Link to='/cart'><button className='btn btn-primary w-50'>Terminar la compra</button></Link><Link to='/'> <button className='btn btn-secondary w-50'>Seguir comprando</button> </Link></> }
                                 </Card.Body>
                                 <ListGroup className="list-group-flush">  
                                     <ListGroupItem>Marca    || {product.marca}</ListGroupItem>

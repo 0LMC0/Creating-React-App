@@ -6,10 +6,13 @@ const Cart = () => {
 
     const { CartList, vaciarCarrito } = useCartContext();
 
+
+
     //mapeo en el CartList del producto
     return (
         <div>
-            { CartList.map(product => <Container >
+            { CartList.map(product => 
+            <Container >
                 <Row>
                     <Col xs={1}>
                                <Image style={{ width: '100%' }} src={product.img}/>
@@ -20,21 +23,21 @@ const Cart = () => {
                     <Col>
                     Cantidad = {product.cantidad}
                     </Col>
-                    <Col></Col>
+                    <Col>precio = ${ product.price }</Col>
                     <Col></Col>
                 </Row>    
                 <Row>
-                <button onClick={ vaciarCarrito }>Vaciar Carrito</button>
                 </Row>
             </Container>
-            
-            
             )
-            }
-
+        }
+        <button onClick={ vaciarCarrito }>Vaciar Carrito</button>
         </div>
-    )
-}
+            )
+        }
+            
+            
+
 
                     // <Col key={product.id}>
                     // {product.name}
