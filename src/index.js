@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { getFirestoreApp } from './firebase/dbConfig';
+
+// llamada a la funcion que inicializa llama a app de dbConfig para obtener las API keys para la llamada a Firebase
+getFirestoreApp();
 
 ReactDOM.render(
     <App />

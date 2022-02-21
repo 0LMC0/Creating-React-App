@@ -5,29 +5,6 @@ import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 const ItemCount = ({stock, onAdd}) => {
 
 const [counter, setCounter] = useState(1)
-    
-// //maxStock alert div created
-// const createMax= ()=>{
-//         const card = document.createElement("div");
-//         card.innerHTML = "";
-        
-//         const maxStock = document.createElement("p");
-//         maxStock.innerHTML = "Stock maximo alcanzado";
-
-//         card.append(maxStock);
-//         document.body.append(card); 
-// }
-// // minstock alert 
-// const createMin = ()=>{
-//     const card = document.createElement("div");
-//     card.innerHTML = "";
-    
-//     const minStock = document.createElement("p");
-//     minStock.innerHTML = "Cantidad minima de compra";
-
-//     card.append(minStock);
-//     document.body.append(card); 
-// }
 
 //funcion para incrementar el valor
     const handleIncrement = ()=> {

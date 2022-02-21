@@ -15,7 +15,7 @@ export const products = [
         name: 'Nike AirMax 720 ghost',
         description: 'La unidad de talón más alta en la historia de Air también proporciona el mayor desplazamiento de volumen del talón. Esto maximiza el rebote y la comodidad del 720, y con su forma de 360 ​​grados, la unidad actúa como una cuna para el pie.',
         price: 27000,
-        stock: 2,
+        stock: 8,
         marca: 'Nike',
         modelo: 'AirMax 720 ghost',
         category:'mas_vendidas',

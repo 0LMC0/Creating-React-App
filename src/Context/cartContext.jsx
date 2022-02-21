@@ -19,17 +19,23 @@ export const CartContextProvider = ({ children }) =>{
 
     //funcion que agrega los items al carrito sin sacar los anteriores
     function AgregarAlCarrito(items) {   
-    const data = new Set(CartList);
-
-        setCartList([ ...data, items ])
+        setCartList([ ...CartList, items ]) 
     }
 
-    console.log(CartList)
+    function borrarItem (id) {
+        const newCart = CartList.filter((items) => items.id !== id)
+        setCartList([ ...newCart ])
+    }
+
 
     //funcion de setear a objeto vacio el carrito osea sin productos
     function vaciarCarrito (){
         setCartList([]);
     }
+    
+
+    const nCantidad = Object.values(CartList).reduce(( acc, {cantidad}) => acc + cantidad, 0)
+    const nPrecio = Object.values(CartList).reduce(( acc, {cantidad, price}) => acc + cantidad * price, 0)
 
     //se retorna la creacion de contexto y de value todos los estados y funciones que yo quiero que sean globales a los children en app.js
     return(
@@ -37,7 +43,10 @@ export const CartContextProvider = ({ children }) =>{
             CartList,
             AgregarAlCarrito,
             vaciarCarrito,
-            useCartContext
+            useCartContext,
+            borrarItem,
+            nPrecio,
+            nCantidad
         }} >
             { children }
         </cartContext.Provider>

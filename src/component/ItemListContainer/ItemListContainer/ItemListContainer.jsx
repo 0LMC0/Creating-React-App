@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import { traerProductos } from '../products/products'
 import ItemList from '../itemlist/ItemList'
 import { Container } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import PacmanLoader from "react-spinners/PacmanLoader";
 import { css } from "@emotion/react";
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 const override = css`
 display: flex;
@@ -24,23 +24,32 @@ const ItemListContainer = (greetings) => {
 
 
     useEffect(() => {
-        if(categoriaId){
-            traerProductos
-            .then(answer => setListaProductos(answer.filter(product => product.category === categoriaId)))
-            .finally(() => setLoading(false))
-        }else{
-            traerProductos
-            .then(answer => setListaProductos(answer))
-            .finally(() => setLoading(false))
-        }
+        //conexiom con la base de datos
+        const dataBase = getFirestore();
+
+        // //funcion por si quiero traer solo un elemento de la coleccion
+        // const queryProd = doc(dataBase, 'productos', '7VbkSA2ZCVmxO4L3wxLI')
+
+        // //funcion que trae a un solo elemento de la coleccion
+        // getDoc(queryProd)
+        // //promesa asi que se tiene que setear la respuesta
+        // .then(res => setListaProductos({id: res.id, ...res.data()}))
+
         
-    }, [categoriaId]);
 
+        const queryCollection = (categoriaId) ? query(collection(dataBase, 'productos'), where('category', '==', categoriaId)) : query(collection(dataBase, 'productos'))
 
-
-    return (
-
-        <div>
+        getDocs(queryCollection)
+        .then(res => setListaProductos(res.docs.map(prod => ({id: prod.id, ...prod.data()}) ) ) )
+        .catch(err => err)
+        .finally(() =>setLoading(false))
+                
+            }, [categoriaId]);
+            
+            
+            return (
+                
+                <div>
             <h2 className='text-center'>{ greetings.titulo }</h2>
             <Container>
             {Loading ? <PacmanLoader color={color} loading={Loading} css={override} size={70} /> : <ItemList productos={ListaProductos    } />}

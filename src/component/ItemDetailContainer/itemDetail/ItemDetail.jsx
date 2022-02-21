@@ -59,7 +59,6 @@ const ItemDetail = ({product}) => {
 
            
             </Container>
-            
         </div>
     )
 }
