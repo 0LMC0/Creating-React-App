@@ -8,7 +8,26 @@
 An E commerce platform made using React JS, Redux, Firebase, Firestore.
 
 The application is composed of the following Features:
-
+### Dependencies
+* @emotion/react: "^11.8.1",
+* @emotion/styled: "^11.8.1",
+* @testing-library/jest-dom: "^5.16.1",
+* @testing-library/react: "^12.1.2",
+* @testing-library/user-event: "^13.5.0",
+* bootstrap: "^5.1.3",
+* firebase: "^9.6.6",
+* formik: "^2.2.9",
+* react: "^17.0.2",
+* react-bootstrap: "^2.1.0",
+* react-dom: "^17.0.2",
+* react-icons: "^4.3.1",
+* react-material-ui-form-validator: "^3.0.0",
+* react-router-dom: "^6.2.1",
+* react-scripts: "5.0.0",
+* react-spinners: "^0.11.0",
+* web-vitals: "^2.1.2"
+        
+        
 ### Front-End
 * A landing page with minimalistic design, with a categories menu and a simple cart with a counter.
 * A page with a cart component which opens up and displays the items selected in a summary, also has a checkout button.
