@@ -50,12 +50,6 @@ Follow the following steps to get development environment running.
   git clone https://github.com/0LMC0/creating-react-app.git
   ```
 
-   _OR USING SSH_
-
-  ```bash
-  git clone https://github.com/0LMC0/creating-react-app.git
-  ```
-
 * Install node modules
 
    ```bash
