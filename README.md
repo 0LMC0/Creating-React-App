@@ -12,15 +12,15 @@ The application is composed of the following Features:
 ### Front-End
 * A landing page with minimalistic design, with a categories menu and a simple cart with a counter.
 * A page with a cart component which opens up and displays the items selected in a summary, also has a checkout button.
-* Some of fields are made using reusable components.
+* Some of the fields were made using reusable components.
 * The cart component also allows to edit the contents of the items selected.
 * It's conected to firebase, so addresses each one of the purchases made on the website on there. 
-* And when you finally made the purchase it give you an order alfanumber.
+* And when you finally made the purchase it give you an alfanumber code related to the order.
 
 
 ### Firebase
 
-* As of this moment I am using firebase database to sotre products.
+* As of this moment I am using firebase database to store products.
 * It is also used to store user data and purchases.
 * In the future it will also hold all shopping related and cart related data of each user.
 
