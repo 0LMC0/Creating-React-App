@@ -44,10 +44,9 @@ The application is composed of the following Features:
 * In the future it will also hold all shopping related and cart related data of each user.
 
 **Progress:**
-Version 1 completed
+* Version 1 completed
 
-Version 2 Progress: 50%
-In the project directory, you can run:
+* Version 2 in Progress...
 
 ## Developed With
 
