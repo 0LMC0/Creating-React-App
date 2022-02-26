@@ -10,7 +10,7 @@
 
 ### Version 1 :
 * The data is stored on Firestore
-* escalable
+* Escalable
 
 An E commerce platform made using React JS, Redux, Firebase, Firestore.
 
