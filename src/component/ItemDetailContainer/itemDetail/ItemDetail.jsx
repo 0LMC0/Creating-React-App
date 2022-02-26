@@ -22,7 +22,7 @@ const ItemDetail = ({product}) => {
     return (
         <div>
             <Container>
-                     <Row>
+                     <Row key={product.id}>
                             <Col xs={5}>
                                <Image style={{ width: '100%' }} src={product.img}/>
                             </Col>
@@ -43,7 +43,6 @@ const ItemDetail = ({product}) => {
                                     ${product.price}
                                 </Card.Text>
                                     <p>Quedan disponibles = {product.stock}  unidades</p>
-                                {/* esto muestra el contador y si no con un if un boton de link al carrito cuando ya se eligio */}
                                     { show ?  <ItemCount  stock={product.stock} onAdd={onAdd} /> : <><Link to='/cart'><button className='btn btn-primary w-50'>Terminar la compra</button></Link><Link to='/'> <button className='btn btn-secondary w-50'>Seguir comprando</button> </Link></> }
                                 </Card.Body>
                                 <ListGroup className="list-group-flush">  

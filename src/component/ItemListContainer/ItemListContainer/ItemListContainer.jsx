@@ -52,7 +52,7 @@ const ItemListContainer = (greetings) => {
                 <div>
             <h2 className='text-center'>{ greetings.titulo }</h2>
             <Container>
-            {Loading ? <PacmanLoader color={color} loading={Loading} css={override} size={70} /> : <ItemList productos={ListaProductos    } />}
+            {Loading ? <PacmanLoader color={color} loading={Loading} css={override} size={70} /> : <ItemList productos={ListaProductos   } />}
             </Container>
             
         </div>

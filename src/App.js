@@ -19,7 +19,7 @@ function App() {
             <Routes>
               <Route exact path='/' element={<ItemListContainer titulo="E-Commerce React.JS by Lautaro Caceres" />}/>
               <Route exact path='/category/:categoriaId' element={<ItemListContainer titulo="Resultados filtrados por categoria" />}/>
-              <Route exact path='/Item/:id' element={<ItemDetailContainer/>}/>
+              <Route exact path='/Item/:Id' element={<ItemDetailContainer/>}/>
               <Route exact path='/cart' element={<Cart />}/>
             </Routes> 
         </Ruta>
