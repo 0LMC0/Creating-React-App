@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# React-E-commerce- By Lautaro Caceres
+### Work Under Progress
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Version 1 :
+* The data is stored on Firestore
+* escalable
 
-## Available Scripts
+An E commerce platform made using React JS, Redux, Firebase, Firestore.
 
-In the project directory, you can run:
+The application is composed of the following Features:
+### Dependencies
+* @emotion/react: "^11.8.1",
+* @emotion/styled: "^11.8.1",
+* @testing-library/jest-dom: "^5.16.1",
+* @testing-library/react: "^12.1.2",
+* @testing-library/user-event: "^13.5.0",
+* bootstrap: "^5.1.3",
+* firebase: "^9.6.6",
+* formik: "^2.2.9",
+* react: "^17.0.2",
+* react-bootstrap: "^2.1.0",
+* react-dom: "^17.0.2",
+* react-icons: "^4.3.1",
+* react-material-ui-form-validator: "^3.0.0",
+* react-router-dom: "^6.2.1",
+* react-scripts: "5.0.0",
+* react-spinners: "^0.11.0",
+* web-vitals: "^2.1.2"
+        
+        
+### Front-End
+* A landing page with minimalistic design, with a categories menu and a simple cart with a counter.
+* A page with a cart component which opens up and displays the items selected in a summary, also has a checkout button.
+* Some of the fields were made using reusable components.
+* The cart component also allows to edit the contents of the items selected.
+* It's conected to firebase, so addresses each one of the purchases made on the website on there. 
+* And when you finally made the purchase it give you an alfanumber code related to the order.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Firebase
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* As of this moment I am using firebase database to store products.
+* It is also used to store user data and purchases.
+* In the future it will also hold all shopping related and cart related data of each user.
 
-### `npm test`
+**Progress:**
+* Version 1 completed
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Version 2 in Progress...
 
-### `npm run build`
+## Developed With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [Visual Studio Code](https://code.visualstudio.com/) - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
+* [React](https://reactjs.org/) - A javascript library for building user interfaces
+* [Create react app](https://create-react-app.dev/) - A quick method to start developing a react application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm run eject`
+### Install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow the following steps to get development environment running.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Clone _'creating-react-app.git'_ repository from GitHub
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ```bash
+  git clone https://github.com/0LMC0/creating-react-app.git
+  ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Install node modules
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Starting front-end servers
 
-### Code Splitting
+* Build application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  ```bash
+  npm start
+  ```
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
