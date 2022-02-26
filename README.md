@@ -1,6 +1,13 @@
 # React-E-commerce- By Lautaro Caceres
 ### Work Under Progress
 
+#### Deployedusing GitHub pages at =
+
+  ```bash
+     https://0lmc0.github.io/creating-react-app/
+  ```
+
+
 ### Version 1 :
 * The data is stored on Firestore
 * escalable
