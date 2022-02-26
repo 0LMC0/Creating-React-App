@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/creating-react-app/static/css/main.04179b6f.css",
-    "main.js": "/creating-react-app/static/js/main.ac11a8aa.js",
-    "static/js/787.9433926a.chunk.js": "/creating-react-app/static/js/787.9433926a.chunk.js",
-    "static/media/footshop.png": "/creating-react-app/static/media/footshop.205bf905c3e2739aa527.png",
-    "index.html": "/creating-react-app/index.html",
-    "main.04179b6f.css.map": "/creating-react-app/static/css/main.04179b6f.css.map",
-    "main.ac11a8aa.js.map": "/creating-react-app/static/js/main.ac11a8aa.js.map",
-    "787.9433926a.chunk.js.map": "/creating-react-app/static/js/787.9433926a.chunk.js.map"
+    "main.css": "/public/static/css/main.04179b6f.css",
+    "main.js": "/public/static/js/main.ce4e325e.js",
+    "static/js/787.9433926a.chunk.js": "/public/static/js/787.9433926a.chunk.js",
+    "static/media/footshop.png": "/public/static/media/footshop.205bf905c3e2739aa527.png",
+    "index.html": "/public/index.html",
+    "main.04179b6f.css.map": "/public/static/css/main.04179b6f.css.map",
+    "main.ce4e325e.js.map": "/public/static/js/main.ce4e325e.js.map",
+    "787.9433926a.chunk.js.map": "/public/static/js/787.9433926a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04179b6f.css",
-    "static/js/main.ac11a8aa.js"
+    "static/js/main.ce4e325e.js"
   ]
 }
